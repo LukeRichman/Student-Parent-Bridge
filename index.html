@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="./css/homepage.css">
+    <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.css">
+    <title>Homepage</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="title">
+            <span class="heading">SEE Eligibility Check</span>
+        </div>
+        
+        <div class="nav">
+            <ul>
+                <li>
+                    <a href="login.php">Student Login</a>
+                </li>
+                <li>
+                    <a href="./dashboard.php">Dashboard</a>
+                </li>
+                <li class="dropdown" onclick="toggleDisplay('1')">
+                    <a href="#" class="dropbtn">Subjects &nbsp
+                        <span class="fa fa-angle-down"></span>
+                    </a>
+                    <div class="dropdown-content" id="1">
+                        <a href="">FMC</a>
+                        <a href="">ADA</a>
+                        <a href="">MP</a>
+                        <a href="">OS</a>
+                        <a href="">IWP</a>
+                        <a href="">DBMS</a>
+                    </div>
+                </li>
+                <li class="dropdown" onclick="toggleDisplay('2')">
+                    <a href="#" class="dropbtn">Results &nbsp
+                        <span class="fa fa-angle-down"></span>
+                    </a>
+                    <div class="dropdown-content" id="2">
+                        <a href="./login.php">Results</a>
+                        <a href="./dashboard.php">Manage Results</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    
+        <div class="slider">
+            <img src="images/2.jpg" class="slider-image" alt="img">
+        </div>
+    
+        <div class="main">
+            
+            <span>About The Project</span><br><br>
+            The webpage takes student’s USN and subject as input under the results section and checks for student’s name in the database and validates whether they are present in that subject database and student database or not. If not present they are prompted to enter valid usn or select valid subject.
+Based on the subject input it goes to the subject table in the database and retrieves the student’s performance and displays it on a new screen, where the student is also given the option to print the report or save it as a pdf.
+If it is an update or insertion of marks then the student has to login with their name as id and usn as password and they will be redirected to the dashboard and they can enter their usn and marks in the add results column or edit their marks in the manage results column and then they can logout and under result section they can get their report. 
+Else if the user’s marks are already in the database, then they can directly check for status of eligibility for SEE and Make up under the result section.
+ <br><br>
+
+        <span>Criteria:</span>
+            <p>*To be eligible for SEE student should acquire 20 out of 50, out of 3 internals(conducted for 50 and then converted into out of 10), 1 assignment, 1 AAT.<br>*To be eligible to take up Make-Up exam student should acquire 45 out of 50, out of 3 internals(conducted for 50 and then converted into out of 10), 1 assignment, 1 AAT.<br></p>
+    
+            
+        </div>
+
+        <div class="footer">
+            <div class="footer--contact">
+                <span>DBMS Mini Project, Made By,</span>
+                <p>*1DS20CS239: Vignesh.R.Shetty</p>
+                <p>*1DS20CS245: Vishal Ravi M</p>
+                <p>*1DS20CS252: Yash Karwa</p>
+                
+            </div>
+            <div class="footer--info">
+                <span>Important Links</span>
+                <a href="dashboard.php">Dashboard</a>
+                <a href="login.php">Admin Login</a>
+                <a href="login.php">Results</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
